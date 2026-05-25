@@ -239,7 +239,7 @@ Adds execute permission to the script.
 
 ---
 
-# 4. Networking Commands
+# d. Networking Commands
 
 Networking commands are used to monitor and troubleshoot networks.
 
@@ -295,7 +295,7 @@ Downloads files from the internet.
 
 ---
 
-# d. Process Management Commands
+# e. Process Management Commands
 
 Processes are running programs inside Linux.
 
@@ -351,7 +351,7 @@ Kills all processes with the given name.
 
 ---
 
-# e. Package Installation Commands
+# f. Package Installation Commands
 
 Package managers help install and update software.
 
@@ -635,3 +635,344 @@ chmod +x monitor.sh
 # Conclusion
 
 Shell scripting is an essential Linux skill used for automation, monitoring, system management, and development workflows.
+
+# 5. Linux Development Tools
+
+## Introduction
+
+Linux provides powerful development tools for compiling, debugging, editing, version control, and memory analysis.  
+These tools are widely used in software development, embedded systems, and system programming.
+
+---
+
+# a. GCC (GNU Compiler Collection)
+
+## Objective
+
+Compile and execute C programs using GCC.
+
+---
+
+## Sample C Program
+
+### File: `hello.c`
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, Linux Development Tools!\n");
+    return 0;
+}
+```
+
+---
+
+## Compile Program
+
+```bash
+gcc hello.c -o hello
+```
+
+---
+
+## Run Program
+
+```bash
+./hello
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `gcc` | GNU C Compiler |
+| `-o` | Output executable name |
+| `./hello` | Executes compiled program |
+
+---
+
+# b. GDB (GNU Debugger)
+
+## Objective
+
+Debug programs and inspect execution flow.
+
+---
+
+## Compile with Debugging Symbols
+
+```bash
+gcc -g hello.c -o hello
+```
+
+---
+
+## Start GDB
+
+```bash
+gdb ./hello
+```
+
+---
+
+## Common GDB Commands
+
+```bash
+break main
+run
+next
+print variable
+quit
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `break main` | Sets breakpoint |
+| `run` | Starts program |
+| `next` | Executes next line |
+| `print` | Displays variable value |
+| `quit` | Exits GDB |
+
+---
+
+# c. Make Utility
+
+## Objective
+
+Automate software compilation using Makefiles.
+
+---
+
+## Sample Makefile
+
+### File: `Makefile`
+
+```make
+all:
+	gcc hello.c -o hello
+```
+
+---
+
+## Run Make
+
+```bash
+make
+```
+
+---
+
+## Clean Build Files
+
+```make
+clean:
+	rm -f hello
+```
+
+---
+
+## Run Clean Command
+
+```bash
+make clean
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `make` | Executes Makefile |
+| `make clean` | Removes compiled files |
+
+---
+
+# d. Vim and Nano Editors
+
+## Objective
+
+Edit files directly from Linux terminal.
+
+---
+
+# Vim Editor
+
+## Open File in Vim
+
+```bash
+vim file.txt
+```
+
+---
+
+## Vim Basic Commands
+
+| Command | Description |
+|---|---|
+| `i` | Insert mode |
+| `Esc` | Exit insert mode |
+| `:w` | Save file |
+| `:q` | Quit |
+| `:wq` | Save and quit |
+
+---
+
+# Nano Editor
+
+## Open File in Nano
+
+```bash
+nano file.txt
+```
+
+---
+
+## Nano Shortcuts
+
+| Shortcut | Description |
+|---|---|
+| `Ctrl + O` | Save |
+| `Ctrl + X` | Exit |
+| `Ctrl + K` | Cut line |
+
+---
+
+# Comparison
+
+| Editor | Difficulty |
+|---|---|
+| Vim | Advanced |
+| Nano | Beginner Friendly |
+
+---
+
+# e. Git Version Control
+
+## Objective
+
+Track source code changes using Git.
+
+---
+
+## Initialize Repository
+
+```bash
+git init
+```
+
+---
+
+## Check Status
+
+```bash
+git status
+```
+
+---
+
+## Add Files
+
+```bash
+git add .
+```
+
+---
+
+## Commit Changes
+
+```bash
+git commit -m "Initial Commit"
+```
+
+---
+
+## Connect Remote Repository
+
+```bash
+git remote add origin https://github.com/username/repository.git
+```
+
+---
+
+## Push Code to GitHub
+
+```bash
+git push -u origin main
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `git init` | Creates repository |
+| `git add` | Stages files |
+| `git commit` | Saves changes |
+| `git push` | Uploads code |
+
+---
+
+# f. Valgrind
+
+## Objective
+
+Detect memory leaks and memory-related errors.
+
+---
+
+## Install Valgrind
+
+```bash
+sudo apt install valgrind
+```
+
+---
+
+## Run Valgrind
+
+```bash
+valgrind ./hello
+```
+
+---
+
+## Example Output
+
+```text
+==1234== HEAP SUMMARY:
+==1234==     in use at exit: 0 bytes in 0 blocks
+==1234==   total heap usage: 1 allocs, 1 frees
+```
+
+---
+
+## Applications
+
+- Memory leak detection
+- Invalid memory access detection
+- Performance profiling
+
+---
+
+# Advantages of Linux Development Tools
+
+- Open-source
+- Efficient debugging
+- Automation support
+- Powerful development workflow
+- Widely used in industry
+
+---
+
+# Conclusion
+
+Linux development tools simplify software development, debugging, automation, version control, and memory management for developers and system engineers.
