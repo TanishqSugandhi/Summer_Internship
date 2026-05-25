@@ -1,4 +1,4 @@
-# Linux Environment Comparison Study
+# 1. Linux Environment Comparison Study
 
 This document contains a comprehensive analysis and side-by-side comparison of the core methods used to host, run, and interact with a Linux operating system ecosystem. 
 
@@ -24,7 +24,7 @@ The table below breaks down performance metrics, installation difficulty, resour
 * **Virtual Machines** act as ideal, fully sandbox-isolated environments for testing risky administrative changes, deployment states, or destructive commands.
 * **Online Platforms** provide a zero-risk sandboxed ecosystem perfect for quick syntax evaluations, running scripts on the fly, and learning fundamental commands.
 
-# Linux Terminal Commands Practice
+# 2. Linux Terminal Commands Practice
 
 ## Introduction
 
@@ -33,7 +33,7 @@ This section demonstrates commonly used Linux terminal commands related to file 
 
 ---
 
-# 1. File and Directory Commands
+# a. File and Directory Commands
 
 These commands are used to create, manage, copy, move, and delete files and folders.
 
@@ -129,7 +129,7 @@ Removes an empty directory.
 
 ---
 
-# 2. User Management Commands
+# b. User Management Commands
 
 Linux supports multiple users with secure access control.
 
@@ -185,7 +185,7 @@ Displays groups associated with the user.
 
 ---
 
-# 3. File Permission Commands
+# c. File Permission Commands
 
 Linux uses permissions for system security and access control.
 
@@ -295,7 +295,7 @@ Downloads files from the internet.
 
 ---
 
-# 5. Process Management Commands
+# d. Process Management Commands
 
 Processes are running programs inside Linux.
 
@@ -351,7 +351,7 @@ Kills all processes with the given name.
 
 ---
 
-# 6. Package Installation Commands
+# e. Package Installation Commands
 
 Package managers help install and update software.
 
