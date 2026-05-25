@@ -414,3 +414,224 @@ Installs software using DNF package manager.
 # Conclusion
 
 Linux terminal commands provide efficient system management, automation, software installation, and troubleshooting capabilities.
+
+
+# 3. Basic Shell Scripts in Linux
+
+## Introduction
+
+Shell scripting is used to automate repetitive Linux tasks using Bash commands.  
+The following scripts demonstrate basic Linux automation tasks.
+
+---
+
+# a. File Backup Script
+
+## Objective
+
+Create a shell script to back up files or directories from one location to another.
+
+---
+
+## Script: `backup.sh`
+
+```bash
+#!/bin/bash
+
+# File Backup Script
+
+SOURCE=$1
+DESTINATION=$2
+
+echo "Starting Backup..."
+
+cp -r $SOURCE $DESTINATION
+
+echo "Backup Completed Successfully."
+```
+
+---
+
+## Usage
+
+```bash
+chmod +x backup.sh
+./backup.sh source_folder backup_folder
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `#!/bin/bash` | Specifies Bash shell |
+| `cp -r` | Copies directories recursively |
+| `$1` | First user argument |
+| `$2` | Second user argument |
+
+---
+
+# b. Folder Creation Script
+
+## Objective
+
+Automatically create folders using a shell script.
+
+---
+
+## Script: `create_folder.sh`
+
+```bash
+#!/bin/bash
+
+# Folder Creation Script
+
+FOLDER_NAME=$1
+
+mkdir -p $FOLDER_NAME
+
+echo "Folder '$FOLDER_NAME' created successfully."
+```
+
+---
+
+## Usage
+
+```bash
+chmod +x create_folder.sh
+./create_folder.sh Linux_Project
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `mkdir` | Creates directory |
+| `-p` | Creates parent directories if needed |
+| `$1` | User-provided folder name |
+
+---
+
+# c. System Information Display Script
+
+## Objective
+
+Display important system information such as kernel details, uptime, memory, and disk usage.
+
+---
+
+## Script: `system_info.sh`
+
+```bash
+#!/bin/bash
+
+# System Information Script
+
+echo "==============================="
+echo " SYSTEM INFORMATION "
+echo "==============================="
+
+echo ""
+echo "Kernel Information:"
+uname -a
+
+echo ""
+echo "System Uptime:"
+uptime
+
+echo ""
+echo "Disk Usage:"
+df -h
+
+echo ""
+echo "Memory Usage:"
+free -m
+```
+
+---
+
+## Usage
+
+```bash
+chmod +x system_info.sh
+./system_info.sh
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `uname -a` | Displays kernel details |
+| `uptime` | Shows system uptime |
+| `df -h` | Displays disk usage |
+| `free -m` | Displays memory usage |
+
+---
+
+# d. CPU and Memory Monitoring Script
+
+## Objective
+
+Monitor CPU usage and memory consumption in Linux.
+
+---
+
+## Script: `monitor.sh`
+
+```bash
+#!/bin/bash
+
+# CPU and Memory Monitoring Script
+
+echo "==============================="
+echo " CPU USAGE "
+echo "==============================="
+
+top -bn1 | head -5
+
+echo ""
+echo "==============================="
+echo " MEMORY USAGE "
+echo "==============================="
+
+free -h
+```
+
+---
+
+## Usage
+
+```bash
+chmod +x monitor.sh
+./monitor.sh
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `top -bn1` | Displays CPU/process information |
+| `head -5` | Limits output lines |
+| `free -h` | Displays memory in human-readable format |
+
+---
+
+# Advantages of Shell Scripting
+
+- Automation of repetitive tasks
+- Faster system administration
+- Reduced manual effort
+- Improved productivity
+
+---
+
+# Conclusion
+
+Shell scripting is an essential Linux skill used for automation, monitoring, system management, and development workflows.
