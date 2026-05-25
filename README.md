@@ -1,4 +1,4 @@
-# 🚀 Tanishq Sugandhi
+#  Tanishq Sugandhi
 
 ### **Electronics & Communication Engineering Student 
 
@@ -43,7 +43,7 @@
 * **Anomaly Detection:** Developing AI modules to detect sudden crowd gatherings, rapid dispersal, or unusual aerial movements.
 * **Telemetry:** Integrating live video streaming and telemetry for public safety, disaster management, and rapid response operations.
 
-### 📡 **IoT-Based RADAR Data Acquisition & Monitoring System**
+###  **IoT-Based RADAR Data Acquisition & Monitoring System**
 * **Sensor Fusion:** Designed a hybrid RADAR module integrating an **HB100 Doppler radar**, HC-SR04 ultrasonic sensor, and a servo-driven scanning mechanism for object detection.
 * **Vision Integration:** Implemented an **ESP32-CAM** pipeline to capture visuals of approaching objects automatically for threat recognition.
 * **IoT Telemetry:** Developed an **MQTT/Blynk** data pipeline for remote diagnostics and logging, optimized for drones, UGVs, and perimeter security.
