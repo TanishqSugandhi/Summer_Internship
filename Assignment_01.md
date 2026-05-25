@@ -976,3 +976,206 @@ valgrind ./hello
 # Conclusion
 
 Linux development tools simplify software development, debugging, automation, version control, and memory management for developers and system engineers.
+
+
+# 6. Technical Documentation Assignment
+
+## Objective
+
+Create a properly formatted technical report in PDF format using:
+
+- LaTeX
+OR
+- Markdown + Pandoc
+
+This assignment demonstrates professional technical documentation practices used in Linux environments.
+
+---
+
+# a. Introduction to Technical Documentation
+
+Technical documentation is used to present information in a structured and professional format.
+
+It is widely used for:
+- Project Reports
+- Research Papers
+- Software Documentation
+- System Manuals
+- Internship Reports
+
+---
+
+# b. Documentation Using Markdown
+
+Markdown is a lightweight markup language used to create formatted text documents easily.
+
+---
+
+## Advantages of Markdown
+
+- Simple syntax
+- Easy to read and write
+- Lightweight
+- Compatible with GitHub
+- Easy PDF conversion using Pandoc
+
+---
+
+# Sample Markdown Report
+
+## File: `report.md`
+
+```markdown
+# Linux Internship Assignment Report
+
+## Introduction
+
+This report contains Linux concepts, terminal commands, shell scripting, and development tools studied during the internship.
+
+---
+
+# Topics Covered
+
+- Linux Environments
+- Linux Commands
+- Shell Scripting
+- Development Tools
+- Technical Documentation
+
+---
+
+# Conclusion
+
+This internship improved understanding of Linux systems, automation, and software development tools.
+```
+
+---
+
+# c. Installing Pandoc
+
+Pandoc is a document converter used to convert Markdown files into PDF and other formats.
+
+---
+
+## Install Pandoc
+
+### Ubuntu/Debian
+
+```bash
+sudo apt install pandoc
+```
+
+---
+
+## Verify Installation
+
+```bash
+pandoc --version
+```
+
+---
+
+# d. Convert Markdown to PDF
+
+## Command
+
+```bash
+pandoc report.md -o report.pdf
+```
+
+---
+
+## Explanation
+
+| Command | Description |
+|---|---|
+| `pandoc` | Document converter |
+| `report.md` | Input Markdown file |
+| `-o` | Output file |
+| `report.pdf` | Generated PDF report |
+
+---
+
+# e. Documentation Using LaTeX
+
+LaTeX is a professional document preparation system used for scientific and technical reports.
+
+---
+
+# Advantages of LaTeX
+
+- Professional formatting
+- Better mathematical support
+- Automatic numbering and references
+- Widely used in academia
+
+---
+
+# Sample LaTeX Document
+
+## File: `report.tex`
+
+```latex
+\documentclass{article}
+
+\title{Linux Internship Assignment Report}
+\author{Tanishq Sugandhi}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This report documents Linux concepts, commands, shell scripting, and development tools.
+
+\section{Conclusion}
+
+The assignment improved understanding of Linux systems and development tools.
+
+\end{document}
+```
+
+---
+
+# f. Compile LaTeX File
+
+## Install LaTeX
+
+```bash
+sudo apt install texlive-full
+```
+
+---
+
+## Generate PDF
+
+```bash
+pdflatex report.tex
+```
+
+---
+
+# Output Files
+
+| File | Description |
+|---|---|
+| `report.md` | Markdown source |
+| `report.tex` | LaTeX source |
+| `report.pdf` | Final PDF report |
+
+---
+
+# Applications of Technical Documentation
+
+- Software Engineering
+- Research Publications
+- Project Documentation
+- Linux System Administration
+- Academic Reports
+
+---
+
+# Conclusion
+
+Markdown, Pandoc, and LaTeX provide efficient methods for creating professional technical reports in Linux environments.
