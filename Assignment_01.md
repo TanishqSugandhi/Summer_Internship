@@ -636,7 +636,7 @@ chmod +x monitor.sh
 
 Shell scripting is an essential Linux skill used for automation, monitoring, system management, and development workflows.
 
-# 5. Linux Development Tools
+# 4. Linux Development Tools
 
 ## Introduction
 
@@ -978,7 +978,7 @@ valgrind ./hello
 Linux development tools simplify software development, debugging, automation, version control, and memory management for developers and system engineers.
 
 
-# 6. Technical Documentation Assignment
+# 5. Technical Documentation Assignment
 
 ## Objective
 
