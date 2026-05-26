@@ -1,3 +1,5 @@
+# Linux Environment and Productivity Tools
+
 # 1. Linux Environment Comparison Study
 
 This document contains a comprehensive analysis and side-by-side comparison of the core methods used to host, run, and interact with a Linux operating system ecosystem. 
